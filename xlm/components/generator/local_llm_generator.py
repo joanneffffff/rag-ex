@@ -15,7 +15,7 @@ class LocalLLMGenerator(Generator):
         temperature: float = 0.7,
         max_new_tokens: int = 100,
         top_p: float = 0.9,
-        cache_dir: str = "D:/AI/huggingface"
+        cache_dir: str = "/users/sgjfei3/data/huggingface"
     ):
         super().__init__(model_name=model_name)
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")

@@ -46,7 +46,7 @@ def test_financial_data():
 class TatQAProcessor:
     """Processor for TatQA dataset with tables and paragraphs"""
     def __init__(self):
-        self.cache_dir = "D:/AI/huggingface/tatqa"
+        self.cache_dir = "/users/sgjfei3/data/huggingface/tatqa"
         os.makedirs(self.cache_dir, exist_ok=True)
         
         # Initialize FAISS index

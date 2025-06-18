@@ -16,7 +16,7 @@ class TestUnifiedSystem:
         """Initialize data loader"""
         loader = UnifiedDataLoader(
             data_dir="data",
-            cache_dir="D:/AI/huggingface",
+            cache_dir="/users/sgjfei3/data/huggingface",
             use_faiss=True,
             batch_size=32
         )
@@ -106,7 +106,7 @@ def run_manual_test():
     print("\n1. Initializing data loader...")
     loader = UnifiedDataLoader(
         data_dir="data",
-        cache_dir="D:/AI/huggingface",
+        cache_dir="/users/sgjfei3/data/huggingface",
         use_faiss=True,
         batch_size=32
     )

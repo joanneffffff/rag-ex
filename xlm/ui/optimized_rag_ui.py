@@ -18,7 +18,7 @@ class OptimizedRagUI:
         self,
         encoder_model_name: str = "sentence-transformers/all-MiniLM-L6-v2",
         generator_model_name: str = "facebook/opt-125m",
-        cache_dir: str = "D:/AI/huggingface",
+        cache_dir: str = "/users/sgjfei3/data/huggingface",
         data_path: str = "data/rise_of_ai.txt",
         use_faiss: bool = True,
         window_title: str = "RAG System with FAISS",

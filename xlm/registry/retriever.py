@@ -18,7 +18,7 @@ def load_retriever(encoder_model_name: str, data_path: str, encoder=None):
         # 加载默认编码器
         encoder = Encoder(
             model_name=encoder_model_name,
-            cache_dir="D:/AI/huggingface"
+            cache_dir="/users/sgjfei3/data/huggingface"
         )
     
     # 读取文档

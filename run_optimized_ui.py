@@ -45,7 +45,7 @@ def is_chinese(text):
 
 def load_model():
     model_name = "facebook/opt-1.3b"
-    cache_dir = "D:\\AI\\huggingface"
+    cache_dir = "/users/sgjfei3/data/huggingface"
     
     try:
         # First try loading from local cache

@@ -5,7 +5,7 @@ import pandas as pd
 from xlm.dto.dto import DocumentWithMetadata, DocumentMetadata
 
 class FinancialDataProcessor:
-    def __init__(self, cache_dir: str = "D:/AI/huggingface"):
+    def __init__(self, cache_dir: str = "/users/sgjfei3/data/huggingface"):
         self.cache_dir = cache_dir
     
     def process_news(self, news_data: Dict) -> DocumentWithMetadata:

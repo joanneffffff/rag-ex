@@ -1,7 +1,7 @@
 from xlm.components.encoder.encoder import Encoder
 
 
-def load_encoder(model_name: str = "all-MiniLM-L6-v2", cache_dir: str = "D:/AI/huggingface"):
+def load_encoder(model_name: str = "all-MiniLM-L6-v2", cache_dir: str = "/users/sgjfei3/data/huggingface"):
     """
     加载编码器
     Args:

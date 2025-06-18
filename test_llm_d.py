@@ -8,8 +8,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # 设置 Hugging Face 缓存目录到 D 盘
-os.environ['HF_HOME'] = 'D:/AI/huggingface'
-os.environ['TRANSFORMERS_CACHE'] = 'D:/AI/huggingface/transformers'
+os.environ['HF_HOME'] = '/users/sgjfei3/data/huggingface'
+os.environ['TRANSFORMERS_CACHE'] = '/users/sgjfei3/data/huggingface/transformers'
 
 class LocalLLM:
     def __init__(
@@ -19,7 +19,7 @@ class LocalLLM:
         temperature: float = 0.7,
         max_new_tokens: int = 50,
         top_p: float = 0.9,
-        cache_dir: str = "D:/AI/huggingface"  # 自定义缓存目录
+        cache_dir: str = "/users/sgjfei3/data/huggingface"  # 自定义缓存目录
     ):
         """
         初始化本地LLM
@@ -121,7 +121,7 @@ class LocalLLM:
 
 def test_simple():
     """简单测试"""
-    print("\n模型将下载到 D:/AI/huggingface 目录")
+    print("\n模型将下载到 /users/sgjfei3/data/huggingface 目录")
     
     llm = LocalLLM()
     

@@ -9,7 +9,7 @@ from typing import Dict, Optional, List
 @dataclass
 class EncoderConfig:
     model_name: str = "all-MiniLM-L6-v2"
-    cache_dir: str = "D:/AI/huggingface"
+    cache_dir: str = "/users/sgjfei3/data/huggingface"
     device: Optional[str] = None  # Will auto-detect if None
     batch_size: int = 32
     max_length: int = 512

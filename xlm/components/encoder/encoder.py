@@ -8,7 +8,7 @@ class Encoder:
         self,
         model_name: str = "all-MiniLM-L6-v2",
         device: str = None,
-        cache_dir: str = "D:/AI/huggingface",
+        cache_dir: str = "/users/sgjfei3/data/huggingface",
     ):
         """
         初始化编码器

@@ -22,7 +22,7 @@ def load_generator(
     if use_local_llm:
         return LocalLLMGenerator(
             model_name=generator_model_name,
-            cache_dir="D:/AI/huggingface",
+            cache_dir="/users/sgjfei3/data/huggingface",
             temperature=0.1,  # 降低温度以获得更确定性的答案
             max_new_tokens=50,  # 限制生成长度
             top_p=0.9

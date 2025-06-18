@@ -39,7 +39,7 @@ def test_basic_retrieval():
         # Initialize components
         encoder = Encoder(
             model_name="sentence-transformers/all-MiniLM-L6-v2",
-            cache_dir="D:/AI/huggingface"
+            cache_dir="/users/sgjfei3/data/huggingface"
         )
         documents = create_test_documents()
         
@@ -73,7 +73,7 @@ def test_faiss_retrieval():
     try:
         encoder = Encoder(
             model_name="sentence-transformers/all-MiniLM-L6-v2",
-            cache_dir="D:/AI/huggingface"
+            cache_dir="/users/sgjfei3/data/huggingface"
         )
         # Create more test documents for FAISS
         documents = create_test_documents(num_docs=100)
@@ -111,7 +111,7 @@ def test_corpus_update():
     try:
         encoder = Encoder(
             model_name="sentence-transformers/all-MiniLM-L6-v2",
-            cache_dir="D:/AI/huggingface"
+            cache_dir="/users/sgjfei3/data/huggingface"
         )
         initial_documents = create_test_documents(num_docs=2)
         
@@ -146,7 +146,7 @@ def test_batch_processing():
     try:
         encoder = Encoder(
             model_name="sentence-transformers/all-MiniLM-L6-v2",
-            cache_dir="D:/AI/huggingface"
+            cache_dir="/users/sgjfei3/data/huggingface"
         )
         documents = create_test_documents(num_docs=20)
         

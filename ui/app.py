@@ -16,7 +16,7 @@ def initialize_data_loader():
     """Initialize the data loader with proper configuration"""
     return UnifiedDataLoader(
         data_dir="../data",
-        cache_dir="D:/AI/huggingface",
+        cache_dir="/users/sgjfei3/data/huggingface",
         use_faiss=True,
         batch_size=32
     )

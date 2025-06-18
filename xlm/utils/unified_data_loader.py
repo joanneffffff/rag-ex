@@ -17,7 +17,7 @@ class UnifiedDataLoader:
     def __init__(
         self,
         data_dir: str = "data",
-        cache_dir: str = "D:/AI/huggingface",
+        cache_dir: str = "/users/sgjfei3/data/huggingface",
         use_faiss: bool = True,
         batch_size: int = 32,
         max_samples: int = 1000,  # 限制每个数据源的最大样本数

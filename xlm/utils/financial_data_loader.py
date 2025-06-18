@@ -5,7 +5,7 @@ from xlm.utils.financial_data_processor import FinancialDataProcessor
 from xlm.dto.dto import DocumentWithMetadata
 
 class FinancialDataLoader:
-    def __init__(self, cache_dir: str = "D:/AI/huggingface"):
+    def __init__(self, cache_dir: str = "/users/sgjfei3/data/huggingface"):
         self.cache_dir = cache_dir
         self.processor = FinancialDataProcessor(cache_dir=cache_dir)
     

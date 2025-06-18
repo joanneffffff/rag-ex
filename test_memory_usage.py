@@ -59,7 +59,7 @@ def test_retriever(use_faiss: bool, num_docs: int = 1000, batch_size: int = 100)
     # Initialize encoder
     encoder = Encoder(
         model_name="sentence-transformers/all-MiniLM-L6-v2",
-        cache_dir="D:/AI/huggingface"
+        cache_dir="/users/sgjfei3/data/huggingface"
     )
     print_memory_status("After Encoder Initialization")
     
