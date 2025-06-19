@@ -267,6 +267,7 @@ class OptimizedUI:
             )
 
         demo.launch(share=False)
+        # demo.launch(share=False, server_name="0.0.0.0", server_port=7860)
 
 if __name__ == "__main__":
     # 确保必要的目录存在
